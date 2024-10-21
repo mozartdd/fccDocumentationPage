@@ -4,10 +4,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DOCUMENTATION</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-            <nav id="navbar"><a href="#examples">click</a></nav>
+        <nav id="navbar">
+            <header><h1 id="nav-head">JS Documentation</h1></header>
+            <a class="nav-link" href="#introduction">Introduction</a>
+            <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+            <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+            <a class="nav-link" href="#hello_world">Hello world</a>
+            <a class="nav-link" href="#examples">Examples</a>
+            <a class="nav-link" href="#variables">Variables</a>
+            <a class="nav-link" href="#function_declarations">Function declarations</a>
+        </nav>
         <main id="main-doc">
             <section class="main-section" id="introduction">
                 <header>
@@ -33,9 +42,9 @@
                 </header>
                 <p>This guide assumes you have the following basic background:</p>
                 <ul>
-                    <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
-                    <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-                    <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+                    <li><p>A general understanding of the Internet and the World Wide Web (WWW).</li></p>
+                    <li><p>Good working knowledge of HyperText Markup Language (HTML).</li></p>
+                    <li><p>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li></p>
                 </ul>
             </section>
             <section class="main-section" id="JavaScript_and_Java">
@@ -66,14 +75,33 @@
                 <header>
                     <h2>Examples</h2>
                 </header>
-                <code>function myFunction() { console.log("Hello, World!"); }</code>
-                <code>function myFunction(name) { console.log("Hello, " + name + "!"); }</code>
-                <code>if (name === "John") { console.log("Hello, John!"); } else { console.log("Hello, stranger!"); }
-                    for (var i = 0; i < 5; i++) { console.log(i); }</code>
-                <code>var myArray = [1, 2, 3, 4, 5]; console.log(myArray[2]); 
+                <code>function myFunction() { console.log("Hello, World!"); }</code><br><br>
+                <code>function myFunction(name) { console.log("Hello, " + name + "!"); }</code><br><br>
+                <code>if (name === "John") { console.log("Hello, John!"); <br>} else { console.log("Hello, stranger!"); <br>}
+                    for (var i = 0; i < 5; i++) { console.log(i); }</code><br><br>
+                <code>var myArray = [1, 2, 3, 4, 5];<br>console.log(myArray[2]);<br> 
                     // Output: 3
-                    var myObject = { name: "John", age: 30 }; console.log(myObject.name); 
+                    var myObject = { name: "John", age: 30 };<br> console.log(myObject.name); <br>
                     // Output: "John"</code>
+            </section>
+            <section class="main-section" id="variables">
+                <header>
+                    <h2>Variables</h2>
+                </header>
+                <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+                <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
+                <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
+            </section>
+            <section class="main-section" id="function_declarations">
+                    <header><h2>Function declarations</h2></header>
+                    <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
+                    <ul>
+                        <li><p>The name of the function.</p></li>
+                        <li><p>A list of arguments to the function, enclosed in parentheses and separated by commas.</p></li>
+                        <li><p>The JavaScript statements that define the function, enclosed in curly brackets, { }.</p></li>
+                    <p>For example, the following code defines a simple function named square:</p>
+                    <code>function square(number) { return number * number; }</code>
+                    </ul>
             </section>
         </main>
     </body>
